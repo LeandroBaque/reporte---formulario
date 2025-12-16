@@ -1,0 +1,127 @@
+/* --- 1. Reset Básico y Tipografía --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Fondo suave */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #1a4f78; /* Color primario oscuro */
+}
+
+/* --- 2. Estructura General (Layout) --- */
+.header {
+    background-color: #1a4f78;
+    color: white;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex; /* Para una mejor organización de secciones */
+    gap: 30px;
+}
+
+.anexo-section {
+    flex: 1; /* Ocupa la mitad del espacio */
+}
+
+.reporte-section {
+    flex: 1; /* Ocupa la otra mitad */
+}
+
+/* --- 3. Componentes (Card, Botón) --- */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    border-left: 5px solid #007bff; /* Borde de énfasis */
+}
+
+.subtitle {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #28a745; /* Verde para acción de reporte */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.btn-primary:hover {
+    background-color: #1e7e34;
+}
+
+/* --- 4. Estilos de la Tabla (data-table) --- */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.data-table thead th {
+    background-color: #e9ecef; /* Fondo de cabecera gris claro */
+    color: #333;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+}
+
+.data-table tbody td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+}
+
+/* Colores para Tipos de Datos (para mejor visualización) */
+.type-int {
+    font-weight: bold;
+    color: #dc3545; /* Rojo para INT */
+}
+
+.type-varchar {
+    font-weight: bold;
+    color: #007bff; /* Azul para VARCHAR */
+}
+
+.note {
+    font-style: italic;
+    font-size: 0.85em;
+    margin-top: 15px;
+    border-left: 3px solid #ffc107;
+    padding-left: 10px;
+    color: #555;
+}
+
+/* --- 5. Footer --- */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e9ecef;
+    color: #666;
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+/* --- Media Queries (Responsiveness) --- */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Apila las secciones en móviles */
+    }
+        }
